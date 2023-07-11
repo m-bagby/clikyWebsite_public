@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/clikyIcon.png"/>
+    <title>cliky</title>
+    <meta name="description" content="Enhance your typing experience with cliky, the free Windows program that adds
+    immersive sound feedback to your keystrokes. Enjoy a tactile response and customize audio effects for a truly
+    personalized typing journey. Download cliky for free and elevate your typing to a new level of satisfaction.">
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+
+    <script src="fadeUpAnimation.js" defer></script>
+    <script src="typingAnimation.js" defer></script>
+    <script src="responsiveNav.js" defer></script>
+    <script src="noDownloadAlert.js" defer></script>
+</head>
+
+
+<body>
+<header class="padded">
+    <div class="headerContainer container">
+        <h2 id="title"><a href="index.html">cliky</a></h2>
+
+        <nav>
+            <div class="navList">
+                <button class="navIcon" onclick="toggleResponsiveNavDisplay()"><span
+                        class="material-icons-outlined material-icons">menu</span></button>
+
+                <a href="about.html" class="animatedLink">About</a>
+                <a href="contribute.html" class="animatedLink">Contribute</a>
+                <a href="donate.html" class="animatedLink">Donate</a>
+                <button class="shadowButton" onclick="noDownloadAlert()">Download</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <div class="padded" id="hero">
+        <!--<h1>Type Satisfyingly</h1>-->
+        <div class="container">
+            <div>
+                <h1>
+                    <span id="typedText"></span><span id="typingCursor">|</span><span
+                        id="untypedText">Type Satisfyingly</span>
+                </h1>
+                <p>Elevate your typing experience. Make your keystrokes cliky.</p>
+                <br/>
+                <button class="shadowButton" onclick="noDownloadAlert()">Download Now</button>
+            </div>
+
+            <div class="heroImgContainer fadeUp">
+                <img src="images/abstract.webp" alt="abstract keyboard" width="600"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="sellingPoints" class="padded container">
+        <section class="sellingPoint centerSection fadeUp">
+            <h2>Welcome to cliky</h2>
+            <p class="textCenter">
+                A revolutionary way to experience sound while typing.
+            </p>
+            <div class="centerContainer">
+                <img src="images/experience.webp"
+                     alt="Person wearing headphones, immersed in the sound taking abstract forms around them"
+                     width="600"/>
+            </div>
+            <p>
+                If you're a keyboard enthusiast, you know that the tactile response of typing is one of the most
+                satisfying
+                parts of interacting with a computer. Cliky elevates that experience to the next level by delivering a
+                pleasurable audio response with every keystroke. The result is a completely new sensory immersion.
+            </p>
+
+        </section>
+
+
+        <section class="leftSection fadeUp">
+            <div class="sellingPoint">
+                <h2>Immersive Audio Experience</h2>
+                <p>
+                    Cliky's unique sound effect playback system creates different sounds for different keys, such as
+                    small
+                    keys,
+                    thick keys, and
+                    spacebars. With volume variability, the slight variations in key sounds that occur when typing are
+                    simulated, making
+                    for convincing, natural audio.
+                </p>
+            </div>
+
+            <div class="sellingPoint centerContainer">
+                <img src="images/immersiveAudio.webp" alt="A seated person immersed by headphones" width="600"/>
+            </div>
+        </section>
+
+        <section class="rightSection fadeUp">
+            <div class="sellingPoint">
+                <h2>Customize Your Sound</h2>
+                <p>
+                    With cliky, you have complete control over the sound of your typing. Adjust the variability of the
+                    effects,
+                    assign keys to different playback categories, and upload your own custom sound effects.
+                </p>
+            </div>
+            <div class="sellingPoint centerContainer">
+                <img src="images/customize.webp"
+                     alt="A person standing before an abstract panel with dials and switches" width="600"/>
+            </div>
+        </section>
+
+        <section class="centerSection sellingPoint fadeUp">
+            <h2>Listen to cliky</h2>
+            <div id="iframeContainer">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" loading="lazy" title="YouTube Cliky Demonstration"
+                        style="margin-block-start: 1em; margin-block-end: 1em;"></iframe>
+            </div>
+        </section>
+
+        <section class="leftSection fadeUp">
+            <div class="sellingPoint">
+                <h2>Open Source and Secure</h2>
+                <p>
+                    Trust in the safety and security of cliky, which is completely open source with full transparency.
+                    The
+                    code
+                    can be vetted thoroughly by anyone in the tech community. And because cliky is open source, we can
+                    even
+                    work
+                    together to make it better.
+                </p>
+            </div>
+            <div class="sellingPoint centerContainer">
+                <img src="images/openAndSecure.webp" alt="A lock over clouds" width="600"/>
+            </div>
+        </section>
+
+        <section class="sellingPoint centerSection" style="text-align: center;">
+            <h2>Like What You Hear?</h2>
+            <p>
+                <button class="shadowButton" onclick="noDownloadAlert()">Get Cliky Now</button>
+            </p>
+        </section>
+    </div>
+</main>
+
+
+<footer>
+    <div id="footerLinks" class="padded">
+        <a href="./">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p>&#169 2023 Mark Bagby</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,344 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Asap", sans-serif;
+    color: #333333;
+    margin: 0;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 0%;
+}
+
+p {
+    color: #4D4D4D;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+}
+
+header a, footer a {
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header {
+    background-color: #F2F2F3;
+}
+
+img {
+    max-width: 100%;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+#title {
+    font-size: 1.5rem;
+    color: #404040;
+    display: inline;
+}
+
+#hero {
+    padding-top: 15rem;
+    padding-bottom: 7.5rem;
+    background-color: #F2F2F3;
+}
+
+#hero .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-left: -.1rem;
+    margin-block-end: .3rem;
+}
+
+#untypedText {
+    visibility: hidden;
+}
+
+.heroImgContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    text-align: right;
+    height: 100%;
+    align-self: center;
+}
+
+button.navIcon {
+    height: 100%;
+    display: none;
+    appearance: none;
+    padding: 0;
+    margin-left: auto;
+    border: none;
+    background: none;
+}
+
+button.navIcon:hover {
+    cursor: pointer;
+}
+
+button.navIcon p {
+    transition: color .5s ease-out;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        align-self: auto;
+    }
+
+    .navList {
+        display: flex;
+        transition: max-height .5s ease-out;
+        overflow: hidden;
+
+        max-height: 27px;
+        flex-direction: column;
+    }
+
+    .navList a {
+        float: none;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    button.navIcon {
+        display: block;
+    }
+
+    .navList.responsive button.navIcon p {
+        color: #909090;
+    }
+}
+
+nav a, nav button {
+    margin-left: 3rem;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.padded {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.shadowButton {
+    border: 2px solid #643C8C;
+    border-radius: 15px;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+    font-size: 1.15rem;
+    color: #643C8C;
+    cursor: pointer;
+    font-family: "Asap", sans-serif;
+}
+
+.shadowButton:hover {
+    filter: brightness(1.25);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    cursor: pointer;
+}
+
+#sellingPoints {
+    display: flex;
+    flex-direction: column;
+}
+
+#sellingPoints section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.sellingPoint {
+    max-width: 85ch;
+}
+
+
+#sellingPoints h2 {
+    text-align: center;
+}
+
+.centerSection {
+    align-self: center;
+}
+
+.leftSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.rightSection {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .leftSection {
+        justify-content: space-between;
+    }
+
+    .rightSection {
+        justify-content: space-between;
+    }
+}
+
+
+footer {
+    background-color: #F2F2F3;
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+
+    text-align: center;
+    font-size: .8rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#footerLinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem;
+}
+
+
+#iframeContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+#iframeContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.centerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+
+.fadeUp {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity .6s ease, transform .6s ease, -webkit-transform .6s ease;
+}
+
+.fadeUpShow {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.animatedLink {
+    transition: all 0.3s ease;
+}
+
+.animatedLink:hover {
+    font-size: 110%;
+    filter: brightness(1.25);
+}
